@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <conio.h>
+main(){
+int i,j,y,x, menu;
+int a[2][5]={4,5,8,1,2,3,11,23,10,7};
+printf("\nIka Novia Sari");
+printf("\n3143111013");
+printf("\nManajemen Informatika A\n\n");
+
+printf("\nDiketahui Array a[2][5]={4,5,8,1,2,3,11,23,10,7}");
+printf("\n1. Sebuah nilai terletak di indeks ke- berapa");
+printf("\n2. Pengurutan dengan metode seleksi minimal");
+printf("\nMasukan pilihan : ");scanf("%d",&menu);
+
+switch(menu){
+
+case 1:{
+ int nilai;
+int i, j, x=3, y, a[2][5]={4, 5, 8, 1, 2, 3, 11, 23, 10, 13};
+printf("Nilai yang dicari adalah : ");
+for(i=0; i<2; i++){
+for(j=0; j<5; j++){
+y = a[i][j];
+if(a[i][j]==x){
+printf("Nilai terdapat pada indeks [%d][%d]\n",i, j, a[i][j]);
+  }
+  }
+ }
+break;
+}
+case 2:{
+int i, j, l, r, min, y, a[2][5]={4, 5, 8, 1, 2, 3, 11, 23, 10, 13};
+printf("Mengurutkan matriks A[2][5] dari nilai terkecil\n");
+for(i=0; i<2; i++){
+for(j=0; j<5; j++){
+min = a[0][0];
+if(a[i][j]>min){
+min = a[i][j];
+l = i;
+r = j;
+}
+printf("%d\t", min);
+}
+y = a[i][j];
+a[i][j] = min;
+a[l][r] = y;
+printf("\n", min);
+}
+}
+}
+}
